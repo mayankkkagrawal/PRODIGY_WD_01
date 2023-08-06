@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TASK 1 - Burger Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add Bootstrap CSS link below -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <header style="background-image: url(images/bgbrick.jpg);">
+    <div class="wrapper">
+      <div class="header-gui">
+        <h1 class="header-gui-title">
+          <span class="header-gui-title-item accent-header-title-word">Juicy Burger Heaven</span>
+        </h1>
+      </div>
+      <div class="location-search">
+        <input type="text" id="location-input" placeholder="Search for a location..." />
+        <button id="search-button">Search</button>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-list-item">
+            <a href="#" class="header-nav-list-item-link nav-item-active">home</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#" class="header-nav-list-item-link nav-item">burgers</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#" class="header-nav-list-item-link nav-item">toppings</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#" class="header-nav-list-item-link nav-item">combos</a>
+          </li>
+          <li class="header-nav-list-item">
+            <a href="#" class="header-nav-list-item-link nav-item">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section1">
+    <h2 class="section1-title title">Burger Delight</h2>
+    <div class="container">
+      <ul class="section1-list">
+        <li class="section1-list-item">
+          <div class="section1-list-item-info">
+            <p class="section1-list-item-info-title">Welcome to Burger Heaven!</p>
+            <p class="section1-list-item-info-desc">
+              Get ready to indulge in the juiciest and most delicious burgers in town. Our secret recipe and fresh ingredients will leave you craving for more. Whether you like it classic or with unique toppings, we have something for everyone. Step into our burger paradise and experience burger perfection like never before!
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section2">
+    <h2 class="section2-pretitle pretitle">Choose From Menu</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Menu Item 1 -->
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-4">
+              <img class="d-block w-100" src="images/cheeseburger.jpg" alt="Cheeseburger">
+            </div>
+            <div class="col-8">
+              <h3>Cheeseburger</h3>
+              <p>Classic cheeseburger with our special sauce and melted cheese.</p>
+              <button class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-4">
+              <img class="d-block w-100" src="images/chicken-burger.jpg" alt="Chicken Burger">
+            </div>
+            <div class="col-8">
+              <h3>Chicken Burger</h3>
+              <p>Juicy chicken patty with fresh lettuce and mayo.</p>
+              <button class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-4">
+              <img class="d-block w-100" src="images/veggie-burger.jpg" alt="Veggie Burger">
+            </div>
+            <div class="col-8">
+              <h3>Veggie Burger</h3>
+              <p>A delicious vegetarian option with fresh vegetables and flavorful sauce.</p>
+              <button class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-4">
+              <img class="d-block w-100" src="images/fries.jpg" alt="FRIES">
+            </div>
+            <div class="col-8">
+              <h3>FRIES</h3>
+              <p>Classic crispy fries with your choice of sauce.</p>
+              <button class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-4">
+              <img class="d-block w-100" src="images/nachos.jpg" alt="Nachos">
+            </div>
+            <div class="col-8">
+              <h3>Nachos</h3>
+              <p>Crunchy nachos with cheese, jalapenos, and salsa.</p>
+              <button class="btn btn-primary">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <section class="contact-section">
+    <h2 class="contact-section-title title">Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p class="contact-info-item">Address: DB CITY MALL, BHOPAL, INDIA</p>
+        <p class="contact-info-item">Phone: +91 7415999234</p>
+        <p class="contact-info-item">Email: info@burgerheaven.com</p>
+      </div>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-sign">© 2023 Burger Heaven. All rights reserved.</p>
+  </footer>
+
+  <!-- Add Bootstrap JS links and your custom JS link -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
